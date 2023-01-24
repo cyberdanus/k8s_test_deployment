@@ -26,7 +26,7 @@ spec:
             name: web2
             port:
               number: 3000     
-      - path: /web3
+      - path: /monitoring
         pathType: Prefix
         backend:
           service:
