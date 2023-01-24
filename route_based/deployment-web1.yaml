@@ -26,6 +26,8 @@ kind: Service
 metadata:
   namespace: ingress-nginx
   name: web1 
+  labels:
+    app: web1
 spec:
   type: ClusterIP
   ports:
