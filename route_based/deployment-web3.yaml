@@ -16,7 +16,7 @@ spec:
         app: web3
     spec:
       containers:
-      - image: cyberdanus/my_app:858eeaa
+      - image: cyberdanus/my_app:latest
         name: my-app
         ports:
         - containerPort: 3000
