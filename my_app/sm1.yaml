@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    name: web12
+  name: web12
+  namespace: test
+spec:
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 5s
+  selector:
+    matchLabels:
+      app: web12
